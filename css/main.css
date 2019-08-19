@@ -1,0 +1,243 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+}
+ a i{
+     color: #ECDDD9;
+     font-size: 18px !important;
+ }
+
+ h1,h2,h3{
+     font-weight: 900;
+ }
+
+ h4,h5,h6{
+     font-weight: 700;
+ }
+
+ .btn{
+     border-radius: 0% !important;
+     box-shadow: none !important;
+ }
+
+ /***************************
+    Buttons
+ ***************************/
+
+ .btn-primary{
+     background-color: #020100 !important;
+     border-color:#020100 !important;
+ }
+
+ .btn-primary:hover{
+     background-color: transparent !important;
+     color:#020100 !important;
+ }
+
+ .btn-outline-secondary{
+     color: #fefffe !important;
+     border-color:#fefffe !important; 
+ }
+ .btn-outline-secondary:hover{
+    color: #020100 !important;
+    background-color:#fefffe !important; 
+}
+
+
+ /***************************
+    Headings
+ ***************************/
+
+ .section-heading{
+    text-align: center;
+    margin-bottom: 50px;
+ }
+
+ .section-heading::first-letter{
+     color:#ECDDD9; 
+ }
+
+  /***************************
+    Navbar
+ ***************************/
+.navbar{
+    opacity: 1;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.nav-link,.nav-brand{
+    color: #020100 !important;
+}
+
+.nav-link:hover{
+    color: #777 !important;
+}
+
+.navbar .btn-primary{
+    color:#fefffe; 
+}
+
+.navbar .btn-primary:hover{
+    color:#020100 !important;
+    background-color: transparent !important; 
+}
+
+  /***************************
+    Home
+ ***************************/
+
+ .home{
+     min-height: 660px;
+     overflow: hidden;
+     background-image: url(../img/main-5.jpg);
+     background-position: bottom;
+     background-size: cover;
+ }
+
+ .card{
+     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+ }
+
+ .card:hover{
+     transform: scale(1.05);
+ }
+
+ .card-img-top{
+     height:300px;
+     object-fit: cover;
+ }
+
+ 
+  /***************************
+    call to action
+ ***************************/
+
+ .call-to-action{
+     background-color: #020100;
+     color: #fefffe;
+ }
+
+   /***************************
+    Gallery / items
+ ***************************/
+
+ .price-tag{
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     background: #020100;
+     padding: 20px;
+     color: #ECDDD9;
+ }
+
+ .price{
+     font-size: 2rem;
+     font-weight:700; 
+ }
+
+ .dollar{
+    font-size: 1.4rem;
+ }
+
+ .gallery{
+     column-count: 3;
+     column-width: 33%;
+ }
+
+ .gallery .pics{
+     position: relative;
+     overflow: hidden !important;
+ }
+
+ .gallery .pics img:hover{
+     transform: scale(1.2);
+ }
+
+  /***************************
+    Testimonials
+ ***************************/
+
+ .testimonial-image{
+     width: 100px;
+     height: 100px;
+     object-fit: cover;
+     border-radius: 50%;
+ }
+
+ .testimonials{
+     background-color:#020100;
+     color:  #fefffe;
+ }
+
+  /***************************
+    contact form & other form
+ ***************************/
+
+ input[type="text"], input[type="email"]{
+     border-radius: 0 !important;
+     padding: 30px 10px !important;
+     border: none;
+     border-bottom: 1px solid #020100 !important;
+     color:#020100 !important;
+
+ }
+
+ input[type="text"]:focus, input[type="email"]:focus{
+   border-color: #020100 !important;
+   box-shadow: 0 1px 1px rgba(2,1,0,0.075) inset, 0 0 4px #020100 !important;
+   outline:0 none !important;
+
+}
+
+  /***************************
+   Footer
+ ***************************/
+
+ .footer{
+     background-color: #020100;
+     color: #fefffe !important;
+ }
+
+ .footer a{
+     color: #fefffe !important;
+ }
+
+ .footer .navbar-brand{
+     color: #fefffe !important;
+ }
+
+ .footer h4{
+    margin-top: 10px;
+ }
+
+   /***************************
+    Media Query
+ ***************************/
+
+ @media (max-width:900px){
+     .navbar .nav-item{
+         display: block;
+         width:100%;
+         padding: 10px 0;
+         text-align: center;
+     }
+
+     .navbar .nav{
+        background-color: #fefffe;
+     }
+
+     .call-to-action,.text-right{
+        text-align: center;
+     }
+     
+ }
+
+ @media (max-width:500px){
+    .gallery{
+        column-count: 1;
+        column-width: 100%;
+    }
+ }
